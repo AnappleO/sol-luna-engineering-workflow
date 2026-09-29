@@ -1,6 +1,6 @@
 # Luna-first Engineering Rules
 
-Use GPT-5.6 Luna Max as the primary model for normal coding, analysis, testing, review, and task orchestration. Sol is an on-demand advisor, not the default supervisor.
+Use GPT-6 Luna Max as the primary model for normal coding, analysis, testing, review, and task orchestration. Sol is an on-demand advisor, not the default supervisor.
 
 ## Automatic routing
 

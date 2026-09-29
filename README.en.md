@@ -2,7 +2,7 @@
 
 [中文说明](README.md)
 
-This configuration uses **GPT-5.6 Luna Max** as the everyday primary model and execution layer, escalating only genuinely difficult decisions to a **GPT-5.6 Sol Advisor**.
+This configuration uses **GPT-6 Luna Max** as the everyday primary model and execution layer, escalating only genuinely difficult decisions to a **GPT-6 Sol Advisor**.
 
 “Unlimited ammunition” is a metaphor: subagents still consume tokens and remain subject to account limits, model access, and concurrency caps. The goal is to conserve Sol usage, not bypass limits.
 
@@ -48,7 +48,7 @@ Sol should answer a bounded decision question, not implement the whole feature. 
 
 ## Truthfulness gate
 
-Files on disk do not prove that a Codex build, account, or tool loaded a model. Report Luna or Sol usage only when agent activity or a tool result identifies that model. See [verification](docs/verification.md).
+Files on disk do not prove that a Codex build, account, or tool loaded a model. Report Luna or Sol usage only when agent activity or a tool result identifies `gpt-6-luna` or `gpt-6-sol`. See [verification](docs/verification.md).
 
 ## License
 

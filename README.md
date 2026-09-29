@@ -2,7 +2,7 @@
 
 [English](README.en.md)
 
-这套配置把 **GPT-5.6 Luna Max** 设为日常主模型和执行层，只在真正困难的判断上调用 **GPT-5.6 Sol Advisor**。
+这套配置把 **GPT-6 Luna Max** 设为日常主模型和执行层，只在真正困难的判断上调用 **GPT-6 Sol Advisor**。
 
 > “无限子弹”是比喻。子 Agent 仍消耗 Token，并受账户额度、模型权限和并发上限约束。这套方案的目标是减少 Sol 消耗，而不是绕过额度限制。
 
@@ -25,7 +25,7 @@ flowchart TD
 
 - 主线程从 Sol Medium 改为 Luna Max；
 - 普通任务不再为了路由和验收固定消耗 Sol；
-- 复杂但可拆解的工作由多个 Luna Max Worker 并行执行；
+- 复杂但可拆解的工作由多个 GPT-6 Luna Max Worker 并行执行；
 - Sol 变成按需调用的 Advisor，只回答明确的困难问题、制定高风险方案或做必要的高风险复核；
 - Sol 给出决策后，常规实现立即回到 Luna。
 
@@ -74,7 +74,7 @@ Sol Advisor 不应接收“完成整个功能”这种宽泛任务。它只接�
 
 ## 真实性门禁
 
-配置文件存在不代表当前 Codex、账户和调用工具一定加载了对应模型。只有 Agent 活动或工具结果明确标识 `gpt-5.6-luna` / `gpt-5.6-sol`，才可以报告实际使用了该模型。详见 [验证指南](docs/verification.md)。
+配置文件存在不代表当前 Codex、账户和调用工具一定加载了对应模型。只有 Agent 活动或工具结果明确标识 `gpt-6-luna` / `gpt-6-sol`，才可以报告实际使用了该模型。详见 [验证指南](docs/verification.md)。
 
 ## 许可协议
 
